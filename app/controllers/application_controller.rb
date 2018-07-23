@@ -29,8 +29,8 @@ end
 end
 
 get '/recipes/:id/edit' do  #load edit form
-  binding.pry
     @recipe = Recipe.find_by_id(params[:id])
+    binding.pry
     erb :edit
   end
 
