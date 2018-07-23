@@ -1,7 +1,7 @@
 <h1>Edit Page </h1>
-Recipe <%=@recipe.name%>
-Ingredients <%=@recipe.ingredients%>
-Cook Time <%=@recipe.cook_time%>
+Recipe <%= @recipe.name %>
+Ingredients <%= @recipe.ingredients %>
+Cook Time <%= @recipe.cook_time %>
 <form action="/recipes/<%= @recipe.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="patch">
   <input type="text" name="name">
