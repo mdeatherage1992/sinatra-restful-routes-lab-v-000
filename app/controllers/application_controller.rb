@@ -30,7 +30,6 @@ end
 
 get '/recipes/:id/edit' do  #load edit form
     @recipe = Recipe.find_by_id(params[:id])
-    binding.pry
     erb :edit
   end
 
